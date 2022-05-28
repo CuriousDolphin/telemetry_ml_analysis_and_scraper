@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  local_jupyter:
+    build: .
+    volumes:
+      - ./notebooks:/notebooks
+      - ./datasets:/data
+    ports:
+      - 8888:8888
